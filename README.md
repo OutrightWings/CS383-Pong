@@ -1,5 +1,5 @@
 # CS383-Pong
-Assignment 1 for CS383 Software Engineering
+Pong for CS383 Software Engineering
 
 
 How to compile this project:
