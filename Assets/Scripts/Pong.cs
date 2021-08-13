@@ -19,21 +19,25 @@ public class Pong : MonoBehaviour
         startingPos = transform.position;
         speed = baseSpeed;
     }
-    void FixedUpdate()
-    {
+    void Update() {
+        if (Input.GetKey("escape"))
+            Application.Quit();
         if (!initialized) {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 //set some new random angle for it to start at
                 float angle;
                 do {
-                    angle = Random.Range(-45,45);
-                    transform.Rotate(0,angle,0,Space.World);
+                    angle = Random.Range(-45, 45);
+                    transform.Rotate(0, angle, 0, Space.World);
                 } while (angle == 0);
                 initialized = true;
                 canvas.transform.Find("Help").gameObject.SetActive(false);
             }
         }
-        else {
+    }
+    void FixedUpdate()
+    {
+        if(initialized) {
             Vector3 forward = transform.forward;
             forward *= speed;
             rb.velocity = forward;
