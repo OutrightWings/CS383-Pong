@@ -22,6 +22,8 @@ public class Pong : MonoBehaviour
     void Update() {
         if (Input.GetKey("escape"))
             Application.Quit();
+        if (Input.GetKey("r"))
+            OnTriggerEnter(null);
         if (!initialized) {
             if (Input.GetKeyDown(KeyCode.Space)) {
                 //set some new random angle for it to start at

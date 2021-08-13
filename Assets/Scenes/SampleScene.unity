@@ -433,7 +433,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -82}
+  m_AnchoredPosition: {x: 0, y: -54}
   m_SizeDelta: {x: 500, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &465818445
@@ -471,10 +471,12 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Press [ESC] to exit
 
-    Use [W] and [S] to move
+    Press [R] to reset ball
 
-    Press [Space] to
-    release ball
+    Use [W] and [S]
+    to move
+
+    Press [Space] to release ball
 
 '
 --- !u!222 &465818446
